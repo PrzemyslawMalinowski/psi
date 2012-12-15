@@ -1,0 +1,48 @@
+body
+{
+	background-color: rgb(119, 163, 244);
+	
+	
+	
+}
+
+.menu
+{
+	width: 100px;
+	height: 100px;
+}
+
+nav
+{
+	width: 380px;
+}
+
+header
+{
+	position: absolute;
+	top: 20px;
+	left: 430px;
+	background-color: rgb(110,150,255);
+	width: 900px;
+	height: 200px
+	
+}
+
+section
+{
+	position: absolute;
+	top: 260px;
+	left: 430px;
+	/*width: 800px;
+	height: 300px;*/
+	
+	
+}
+
+footer
+{
+	position: absolute;
+	top: 1100px;
+	left: 30px;
+	padding-bottom: 20px;
+}

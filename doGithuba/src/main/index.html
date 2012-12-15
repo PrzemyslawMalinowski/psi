@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+    <head>
+    	
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="Stylesheet" type="text/css" href="style.css" />
+        <!--		<script src="skrypty.js"></script>			-->
+        <script src="jquery.js"></script>
+		<!--<script>!window.jQuery && document.write('<script src="jquery.js"><\/script>')</script>-->
+       
+        <title>Oaza u św. Brata Alberta</title>
+        
+    </head>
+		<!-- poniżej nakodzone zwiekszanie sie obrazkow po najechaniu		-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.menu')
+				    .mouseover(function() {
+				    	var wys = this.top;
+				    	var szer = this.left;
+				    	
+				        $(this).stop().animate({
+					        	height: 150,
+					        	width: 150,
+					        	/*top: "-=25",
+					        	left: "-=25"*/
+				        	}, 300);
+				    })
+				    .mouseout(function() {
+				        $(this).stop().animate({
+				        		width:100, 
+				        		height:100,
+					        	/*top: "+=25",
+					        	left: "+=25"*/
+			        		}, 300);
+				    });
+				
+				
+				
+				
+			})
+		</script>
+    
+    <body>
+    	
+    	<header>
+    		header - tutaj jakieś zdjęcia. kopiując pomysł innej strony, losowe i zmieniające się co jakiś czas :P <br>
+    		plus ofc napis czyja to strona
+    		
+    	</header>
+
+        <section>
+        	
+        	<!--
+        		bez sensu zrobiłem, tutaj przecież będzie to z cmsa, nie trzeba podstrony
+        	-->
+        	<iframe src="glowna.html" style="border: 0px" width="900" height="800">        	</iframe>
+        	
+        <!--	-->
+        </section>
+    	
+    	<nav>
+	        <img src="grafiki/logo.png" width="250" height="250" style="position: fixed; top: 20px; left: 20px;">
+	        
+	        <img class="menu" src="grafiki/button2.png" style="position: fixed; top: 140px; left: 300px;">
+	        <img class="menu" src="grafiki/button1.png" style="position: fixed; top: 20px; left: 300px;">
+	        <img class="menu" src="grafiki/button1.png" style="position: fixed; top: 250px; left: 250px;">
+	        <img class="menu" src="grafiki/button2.png" style="position: fixed; top: 300px; left: 140px;">
+	        <img class="menu" src="grafiki/button1.png" style="position: fixed; top: 300px; left: 20px;">
+
+			<div style="position: fixed; top: 450px; width: 380px">
+	        	tutaj mam pomysł na zapchanie dziury zdjęciami - ale nieszablonowymi ;)
+	        </div>
+        </nav>
+
+        
+        <footer>
+        	stopka
+        	
+        </footer>
+        
+    </body>
+    
+    
+</html>
