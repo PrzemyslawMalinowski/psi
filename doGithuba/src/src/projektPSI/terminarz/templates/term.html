@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+<!--file: blog/templates/blog.html-->
+
+{% block content %}
+<table border="0">
+    {% for wydarzenie in object_list %}
+<tr>
+     <td width="100" align=left>
+         <div class="post_meta">
+             {{ wydarzenie.data }}
+         </div>
+
+     </td>
+
+    <td width="350" align=left>
+        - {{ wydarzenie.cosiedzieje }}
+    </td>
+</tr>
+        <tr><td colspan="2">
+          <p></p>  <hr><p></p>
+        </td></tr>
+
+    {% endfor %}
+</table>
+{% endblock %}

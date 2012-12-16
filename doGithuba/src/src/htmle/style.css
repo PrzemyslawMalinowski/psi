@@ -1,0 +1,66 @@
+body
+{
+	background-color: rgb(119, 163, 244);
+	
+	scrollbar-3dlight-color:silver;
+	scrollbar-arrow-color:black;
+	scrollbar-base-color:rgb(119, 163, 244); 
+	scrollbar-dark-shadow-color:black; 
+	scrollbar-face-color:white; 
+	scrollbar-highlight-color:red;
+	scrollbar-shadow-color:silver
+	
+
+}
+
+img
+{
+	border-width: 0px;	
+	display: inline;
+	
+}
+
+.menu
+{
+	width: 100px;
+	height: 100px;
+}
+
+nav
+{
+	width: 380px;
+}
+
+header
+{
+
+	/*background: url(zdjecia/P6230637.JPG) no-repeat left;/*url(grafiki/naglowek.png);*/	
+	position: absolute;
+	top: 20px;
+	left: 430px;
+	background-color: rgb(110,150,255);
+	width: 900px;
+	height: 200px
+	
+}
+
+section
+{
+	position: absolute;
+	top: 260px;
+	left: 430px;
+	/*width: 800px;
+	height: 300px;*/
+	
+	
+}
+
+footer
+{
+	position: fixed;
+	top: 600px;
+	left: 15px;
+	padding-bottom: 20px;
+	font-size: smaller;
+	color: rgb(10,10,255);
+}

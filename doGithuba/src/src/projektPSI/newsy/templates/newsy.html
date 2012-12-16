@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+<!--file: blog/templates/blog.html-->
+
+{% block content %}
+<table border="0">
+    {% for post in object_list %}
+<tr>
+     <td width="500">
+         <h2><a href="/newsy/{{post.id}}">{{ post.title }}</a></h2>
+     </td>
+
+    <td width="350" align=right>
+        <div class="post_meta">
+            {{ post.created }}
+        </div>
+    </td>
+</tr>
+        <tr><td colspan="2">
+        <div class="post_body">
+            {{ post.body|safe|linebreaks }}
+        </div>
+        </td></tr>
+
+        <tr><td colspan="2">
+          <p></p>  <hr><p></p>
+        </td></tr>
+
+    {% endfor %}
+</table>
+{% endblock %}
